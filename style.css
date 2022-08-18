@@ -1,273 +1,675 @@
-* {
-    font-family: "Poppins", sans-serif;
-  }
-  
-  body > header > nav {
-    float: left;
-    
-    position: relative;
-    right: -791px;
-    top: 7px;
-  
-  }
-  body > header > div:nth-child(2) {
-    float: left;
-  }
-  
-  body > header > nav > a {
-    margin-left: 30px;
-  }
-  body > header > div:nth-child(2) {
-    float: left;
-    position: relative;
-    left: -570px;
-  }
-  header{
-    background-color: #636c79;
-    padding: 25px;
-    height: 570px;
-    color:white;
-    
-  }
-  body > header > div.header-text > img {
-    position: relative;
-    top: 134px;
-    right: 607px;
-  }
-  body > header > div.header-text > h2 {
-    position: relative;
-    /* left: 53px; */
-    top: 100px;
-    font-size: 3.5em;
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;;
+ }
+ ul {
+     list-style-type: none;
+ }
+
+ .mb-1 {
+     margin-bottom: 1rem;
+ }
+
+:root {
+     --ff-primary : 'Raleway', sans-serif;
+     --clr-header-bg:#636C79;
 }
-.header-text {
-    float: right;
-    padding-right: 90px;
+
+.container {
+     margin: auto;
+     width: 90vw;
 }
-body > header > div:nth-child(4) {
-    float: right;
-    position: relative;
-    left: -85px;
-    top: 78px;
-    width: 50%;
-}
-img.header-img {
-    width: 600px;
-    height: 400px;
-    /* transform: scale(1.2); */
-}
-body > header > div.header-text > p {
-    position: relative;
-    top: 100px;
-    /* left: 56px; */
-    color: white;
-}
-  img.logo {
-    width: 100px;
+
+h1,
+h2,
+h3,
+h4 {
+     font-family: 'Raleway', sans-serif;
 }
 
 
-
-input.email-header {
-    padding: 10px;
-    padding-right: 150px;
+.lets-talk-btn {
+     font-size: 1.2rem;
+     padding: 1rem 3.5rem;
+     left:17.7rem;
+     top:0.3rem;
+     background:#8BB7A2;
+     border: 2px solid #8BB7A2;
+     color: white;
+     font-weight: bold;
+     cursor: pointer;
 }
-button.lets-talk {
-    padding: 10px;
-    padding-left: 30px;
-    padding-right: 30px;
-    color: white;
-    font-size: x-small;
-    /* font-weight: 600; */
-    background: #8bb7a2;
-    border: none;
-    position: absolute;
-    left: 219px;
-    top: 77px;
+header {
+     background-color: var(--clr-header-bg);
+     height: 700px;
+     color: white;
 }
-body > header > nav > a:nth-child(7) {
-    padding: 5px;
-    padding-left: 30px;
-    padding-right: 30px;
-    border: 1px solid;
+.navbar {
+     padding: 2rem 0;
+     display: flex;
+     justify-content: space-between;
 }
-.connect{
-    padding:100px;
-    text-align: center;
+header nav {
+     display: flex;
 }
-body > div > h1 {
-    font-size: 45px;
+header nav ul {
+     display: flex;
+     align-items: center;
 }
-.accomplishments {
-    width: 200px;
-    height: 100px;
-    padding: 15px;
-    float: left;
-    margin-left: 70px;
+.nav-btn {
+     float: right;
+     background-color: transparent;
+     color: white;
+     cursor: pointer;
+     padding: 0.5rem 2rem;
+     border: 1px solid white;
+     margin-left: 4rem;
 }
-img.counter-img {
-    width: 801px;
-    height: 500px;
-    padding: 40px;
+.list-item{
+     margin: 0 1rem;
+     cursor: pointer;
 }
-.care {
-    text-align: center;
-}
-.care-text {
-    width: 50%;
-    text-align: left;
-    padding: 20px;
-    padding-left: 156px;
-}
-body > div.care > div > p {
-    color: gray;
-}
-button.care-button {
-    background: #8bb7a2;
-    color: white;
-    border: none;
-    padding: 10px;
-    padding-left: 25px;
-    padding-right: 25px;
-    font-weight: bold;
-    margin-top: 10px;
-}
-body > div.care > div.care-text > h1 {
-    font-size: 35px;
-}
-.care-text {
-    width: 30%;
-    text-align: left;
-    padding: 20px;
-    float: left;
-    padding-left: 256px;
-    padding-top: 100px;
-}
-.care-img-holder {
-    float: right;
-    padding-right: 150px;
-    padding-top: 15px;
-    /* width: 60%; */
-}
-img.care-img {
-    width: 500px;
-}
-.care-text-two {
-    width: 35%;
-    text-align: left;
-    padding: 20px;
-    float: right;
-    padding-right: 60px;
-    padding-top: 100px;
-    margin-right: 64px;
-}
-.care-img-holder-two {
-    width: 50%;
-    padding-left: 225px;
-    /* height: 100px; */
+.nav-logo {
+     width: 7rem;
 }
 
-
-img.care-img-two {
-    width: 600px;
-    height: 400px;
-    object-fit: scale-down;
-}
-.creative-team {
-    margin-top: 500px;
-    width: 100%;
-    padding: 5%;
-    padding-left: 17%;
-    padding-right: 17%;
-}
-.hero-text {
-    float: left;
-    width: 40%;
-}
-.hero-small {
-    color: gray;
-}
-.show1 {
-    width: 20%;
-    position: absolute;
-    padding-top: 100px;
-    float: left;
-}
-img.show-img {
-    width: 300px;
-}
-.show2 {
-    width: 20%;
-    padding-top: 100px;
-    float: right;
-    right: 550px;
-    position: absolute;
-}
-.show3 {
-    width: 20%;
-    left: 1063px;
-    padding-top: 100px;
-    float: right;
-    position: absolute;
-}
-body > div.creative-team > button {
-    position: absolute;
-    top: 4020px;
-    right: 650px;
+.header-details {
+     display: flex;
 }
 
-footer {
-    position: absolute;
-    /* bottom: 10px; */
-    top: 4200px;
-    width: 100%;
-    background: #10181d;
-    color: white;
+.left-header {
+     flex: 1;
 }
+.right-header {
+     flex: 1;
+}
+.left-header img {
+     height: 30rem;
+     width: 25rem;
+     margin: 2rem 0rem 2rem 5rem ;
+     object-fit: cover;
+     
+}
+
+.right-header {
+     padding: 6rem 5rem;
+}
+
+.right-header h1 {
+     font-size: 4rem;
+     margin-bottom: 2rem;
+}
+
+.right-header p {
+     margin-bottom: 2rem;
+}
+
+form {
+     position: relative;
+}
+
+.right-header form input {
+     padding: 1.6rem 4rem;
+     width: 30rem;
+}
+ .section-two {
+     margin-top: 3rem;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+ }
+.section-two-numbers {
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+     padding:  2rem 0rem;
+     width: 80vw;
+     margin-bottom: 3rem;
+}
+.our-info-numbers {
+     font-size: 3rem;
+     font-weight: bold;
+     margin-bottom: 1rem;
+}
+
+.section-two-img img {
+     width: 80vw;
+     height: 550px;  
+}
+.section-two-img img {
+     object-fit: cover;  
+     object-position: top;
+     margin-bottom: 3rem;
+}
+
+.section-two-head h1 {
+     font-size: 3rem;
+     padding: 1rem 15rem;
+     text-align: center;
+}
+
+.section-two-numbers div p:nth-child(2) {
+     font-weight: bold;
+}
+
+.header-button {
+     position: absolute;
+}
+.section-three-heading h1{
+     font-size: 3rem;
+     text-align: center;
+     padding: 4rem 20rem;
+}
+.section-three-parts {
+     display: flex;
+     margin-bottom: 5rem;
+}
+.section-three-parts-left{
+     flex: 1;
+}
+.section-three-parts-right{
+     flex: 1;
+}
+.section-three-part-one-image {
+     width: 30rem;
+     height: 30rem;
+     object-fit: cover;
+     object-position: right;
+}
+.section-three-part-two-image{
+     width: 30rem;
+     height: 30rem;
+     object-fit: cover;
+     object-position: top;
+     float: right;
+     margin-right: 4rem;
+}
+.section-three-part-three-image {
+     width: 30rem;
+     height: 30rem;
+     object-fit: cover;
+     object-position: left;
+}
+
+.section-three-part-two-heading {
+     font-size: 2.5rem;
+     padding: 4.3rem 4.3rem 2rem 0rem;
+}
+.section-three-part-two-p {
+     padding: 0rem 4rem 2rem 0rem;
+     font-size: 1.2rem;
+     line-height: 2rem;
+}
+.section-three-parts-heading {
+     font-size: 2.5rem;
+     padding: 4.3rem 4.3rem 2rem 4.3rem;
+}
+.section-three-parts-p {
+     padding: 0rem 4rem 0rem 4.3rem;
+     font-size: 1.2rem;
+     line-height: 2rem; 
+}
+
+.section-three-btn {
+     margin: 3rem 4rem 0rem 4.3rem;
+}
+
+.our-team-section {
+     padding: 4rem;
+}
+.our-team-section-top {
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+}
+.our-team-section-top h2 {
+     flex: 1;
+     font-size: 2.5rem;
+     padding: 2rem;
+}
+.our-team-section-top p {
+     flex: 1;
+     padding: 2rem 4rem;
+     line-height: 2rem;
+}
+
+.our-team-mates {
+     display: flex;
+     justify-content: space-between;
+     margin-top: 1rem;
+}
+
+.our-team-mates div img {
+     width: 20rem;
+     height: 25rem;
+     object-fit: cover;
+     object-position: top;
+     margin-bottom: 1rem;
+}
+
+.see-more-btn {
+     display: block;
+     margin: auto;
+     margin-top: 4rem;
+}
+
+.our-team-mates div p {
+     padding-right:2rem ;
+}
+
 .footer-section {
-    padding: 50px;
+     background-color:#10181D;
+     color: white;
+     padding: 2rem 3rem;
 }
-.footer-left {
-    float: left;
-}
-.footer-right {
-    float: right;
-}
-.items {
-    position: relative;
-    top: 60px;
-    border-top: 1px solid;
-}
-li.list-items {
-    float: left;
-    margin-left: 150px;
-}
-li::marker{
-    content: none;
+.footer-top {
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     padding-bottom: 2rem;
+     border-bottom: 1px solid white;
 }
 
-footer {
+.footer-top a{
+     text-decoration: none;
+     color: white;
+     margin-left: 1rem;
+     padding: 1rem;
+     background-color: #282F34;
+     border-radius: 50%;
+}
+.fab.fa-facebook-f {
+    padding: 0px 4px;
+}
+
+.footer-bottom {
+     margin: 2rem 0;
+     display: flex;
+     justify-content: space-between;
+}
+
+.footer-links ul li {
+     margin: 1rem 0rem;
+     cursor: pointer;
+}
+
+.link-head {
+     font-size: 1.2rem;
+     font-weight: 600;
+}
+
+.footer {
+     width: 80vw;
+}
+body {
+    min-width: 270px
+}
+
+.ham-container {
+  display: none;
+}
+.footer {
+  width: 90vw;
+}
+
+
+@media only screen and (max-width: 1330px) {
+  .right-header h1 {
+    font-size: 4vw;
+  }
+
+  .section-two-head h1 {
+    padding: 0rem;
+    width: 50vw;
+    font-size: 2rem;
+  }
+  .our-info-numbers {
+    font-size: 2rem;
+  }
+  .section-three-heading h1 {
+    font-size: 3rem;
+    text-align: center;
+    padding: 3rem 16rem;
+  }
+  .our-team-mates {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .our-team-mates div{
+    margin : 2rem 0rem;
+    display: block;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 1130px) {
+  .left-header img {
+    margin-left: 1rem;
+    height: 25rem;
+    width: 20rem;
+  }
+  .section-three-heading h1 {
+    font-size: 2rem;
+    text-align: center;
+    padding: 0rem;
+    margin-bottom: 3rem;
+  }
+  .container {
+    width: 95vw;
+  }
+}
+@media only screen and (max-width: 960px) {
+  .left-header img {
+    height: 20rem;
+    width: 15rem;
+  }
+
+  .right-header {
+    padding: 2rem 4rem;
+  }
+
+  header nav {
+    display: none;
+  }
+
+   .ham-container {
+    display: flex;
+    cursor: pointer;
+   }
+
+  .ham {
+    width: 2rem;
+    height: 2px;
+    background-color: white;
+    position: relative;
+  }
+
+  .ham::after,
+  .ham::before {
+    content: "";
+    width: 2rem;
+    height: 2px;
+    background-color: white;
     position: absolute;
-    /* bottom: 10px; */
-    top: 4200px;
-    width: 100%;
-    height: 250px;
-    background: black;
+    cursor: pointer;
+  }
+  .ham::after {
+    bottom: 0.6rem;
+    cursor: pointer;
+  }
+
+  .ham::before {
+    top: 0.6rem;
+    cursor: pointer;
+  }
+
+  header {
+    height: 500px;
+  }
+
+  .right-header form input {
+    padding: 1.3rem 2rem;
+    width: 20rem;
+  }
+
+  .lets-talk-btn {
+    font-size: 1rem;
+    padding: 0.8rem 1rem;
+    left: 13rem;
+    top: 0.4rem;
+    background: #8bb7a2;
+    border: 2px solid #8bb7a2;
     color: white;
-}
-body > footer > div > div.items > ul > li:nth-child(5) {
-    position: relative;
-    bottom: 36px;
-}
-body > footer > div > div.items > ul > li:nth-child(1) {
-    margin-left: unset;
-}
-ul.nested{
-    margin-left: -40px;
-    color: grey;
-    font-size: smaller;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  .navbar {
+    align-items: center;
+    padding: 2rem;
+  }
+  .section-two-img img {
+    height: 420px;
+  }
+  .section-three-parts-right img {
+    width: 16rem;
+    height: 20rem;
+    display: block;
+    margin: auto;
+
+  }
+  .section-three-parts-heading {
+    font-size: 2rem;
+    padding: 0rem 1rem 1rem 2rem;
+  }
+  .section-three-parts-p {
+    padding: 0rem 1rem 1rem 2rem;
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+  .section-three-btn {
+    margin: 1rem 0rem 0rem 2rem;
+  }
+  .section-three-part-two-image {
+    width: 16rem;
+    height: 20rem;
+  }
+  .section-three-part-two-heading {
+    font-size: 2rem;
+    padding: 0rem 1rem 1rem 0rem;
+  }
+
+  .section-three-part-two-p{
+    padding: 1rem 0rem;
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .our-team-section-top {
+    flex-direction: column;
+    text-align: center;
+  }
+  .our-team-section-top h2 {
+    font-size: 2rem;
+    padding: 0rem;
+  }
+  .our-team-section-top p {
+    flex: 1;
+    padding: 1rem 0rem;
+    line-height: 1rem;
+  }
+  .our-team-section {
+    padding: 2rem;
+  }
+
+  .footer-bottom {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .footer-links {
+    padding: 2.5rem;
+  }
+  .footer-top {
+    flex-wrap: wrap;
+  }
+  .social-icons {
+    padding: 0rem 2rem;
+    margin: 0rem 2rem;
+    margin-top: 1.1rem;
+  }
 
 }
-li.list-text {
-    margin-top: 10px;
+
+
+
+@media only screen and (max-width: 700px) {
+    .left-header img {
+        height: 16rem;
+        width: 11rem;
+    }
+
+    .right-header {
+        padding: 2rem 3rem;
+    }
+    .right-header h1 {
+        font-size: 3.5vw;
+    }
+    header {
+        height: 450px;
+    }
+    .section-two-head h1 {
+        padding: 0rem;
+        width: 50vw;
+        font-size: 1.5rem;
+      }
+      .our-info-numbers {
+        font-size: 1.5rem;
+      }
+
+      .section-two-numbers {
+        justify-items: center;
+        flex-wrap: wrap;
+      }
+      .section-two-numbers div {
+       padding: 1.5rem;
+       display: flex;
+       flex-direction: column;
+       text-align: center;
+      }
+
+      
+}
+
+@media only screen and (max-width: 600px) {
+    .left-header {
+        display: none;
+    }
+    .right-header {
+        padding: 2rem;
+    }
+    .right-header h1{
+        font-size: 1.5rem;
+    }
+    .section-two-img img {
+        height: 320px;
+      }
+      .section-three-parts {
+        flex-direction: column-reverse;
+        text-align: center;
+      }
+
+      .section-three-parts.section-three-part-two-two {
+        flex-direction: column;
+        
+    }
+    .footer-logo {
+      display: block;
+      margin: auto;
+      padding: 1rem;
+      margin-bottom: 1rem;
+    }
+    .social-icons {
+      display: block;
+      margin: auto;
+      padding: 1rem 0rem;
+    }
+    .footer {
+      width: 85vw;
+      display: block;
+     margin: auto;
+    }
+    .footer-top a i {
+      margin-bottom: 2.5rem;
+    }
+    .section-three-part-two-image {
+      width: 16rem;
+      height: 20rem;
+      float: none;
+      margin: auto;
+      margin-bottom: 1rem;
+    }
+    .section-three-parts-right img {
+      margin-bottom: 1rem;
+    }
+   
+}
+@media only screen and (max-width: 400px) {
+    .right-header {
+        padding: 1rem;
+        margin-top: 2rem;
+    }
+    .right-header h1{
+        font-size: 1.3rem;
+        margin-bottom: 1rem;
+    }
+    .right-header p{
+        font-size: 0.8rem;
+        margin-bottom: 1rem;
+    }
+    .right-header form input {
+        padding: 1rem 1rem;
+        width: 17rem;
+      }
+      .lets-talk-btn {
+        font-size: 1rem;
+        padding: 0.8rem 1rem;
+        left: 10.5rem;
+        top: 0.1rem;
+        background: #8bb7a2;
+        border: 2px solid #8bb7a2;
+        color: white;
+        font-weight: bold;
+        cursor: pointer;
+      }
+      .container {
+        width: 95vw;
+      }
+
+      header {
+        height: 380px;
+      }
+
+      .section-two-head h1 {
+        width: 80vw;
+    }
+    .section-two-numbers {
+        padding: 1rem 0rem;
+    }
+    .section-two-numbers div {
+        padding: 1rem;
+    }
+    .section-two-img img {
+        height: 250px;
+      }
+
+      .section-three-parts {
+        flex-direction: column-reverse;
+      }
+      .our-team-mates div img {
+        width: 15rem;
+        height: 20rem;
+      }
+
+
+}
+
+@media only screen and (max-width: 300px) {
+    .lets-talk-btn {
+        font-size: 1rem;
+        padding: 0.6rem 0.4rem;
+        left: 9rem;
+        top: 0.1rem;
+    }
+    .right-header form input {
+        padding: 1rem 1rem;
+        width: 9rem;
+        font-size: 0.6rem;
+    }
+    .section-two-img img {
+        height: 200px;
+      }
 }
